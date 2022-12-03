@@ -4,7 +4,7 @@ namespace DotNet6WebAPI.Models
 {
     public class APIDbContext:DbContext
     {
-        public APIDbContext(DbContextOptions options):base(options)
+        public APIDbContext(DbContextOptions option):base(option)
         {
 
         }

@@ -1,0 +1,149 @@
+﻿Each package is licensed to you by its owner. NuGet is not responsible for, nor does it grant any licenses to, third-party packages. Some packages may include dependencies which are governed by additional licenses. Follow the package source (feed) URL to determine any dependencies.
+
+Package Manager Console Host Version 6.4.0.111
+
+Type 'get-help NuGet' to see all available NuGet commands.
+
+PM> Add-Migration "Initial Create" -verbose
+Using project 'DotNet6WebAPI'.
+Using startup project 'DotNet6WebAPI'.
+Build started...
+Build succeeded.
+C:\Program Files\dotnet\dotnet.exe exec --depsfile "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.deps.json" --additionalprobingpath C:\Users\ASUS\.nuget\packages --runtimeconfig "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.runtimeconfig.json" C:\Users\ASUS\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.0\tools\netcoreapp2.0\any\ef.dll migrations add "Initial Create" --json --verbose --no-color --prefix-output --assembly "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.dll" --project "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\DotNet6WebAPI.csproj" --startup-assembly "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.dll" --startup-project "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\DotNet6WebAPI.csproj" --project-dir "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\\" --language C# --configuration Debug --working-dir "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI" --root-namespace DotNet6WebAPI --nullable
+Using assembly 'DotNet6WebAPI'.
+Using startup assembly 'DotNet6WebAPI'.
+Using application base 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0'.
+Using working directory 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI'.
+Using root namespace 'DotNet6WebAPI'.
+Using project directory 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\'.
+Remaining arguments: .
+Finding DbContext classes...
+Finding IDesignTimeDbContextFactory implementations...
+Finding application service provider in assembly 'DotNet6WebAPI'...
+Finding Microsoft.Extensions.Hosting service provider...
+Using environment 'Development'.
+Using application service provider from Microsoft.Extensions.Hosting.
+Found DbContext 'APIDbContext'.
+Finding DbContext classes in the project...
+Using context 'APIDbContext'.
+Finding design-time services referenced by assembly 'DotNet6WebAPI'...
+Finding design-time services referenced by assembly 'DotNet6WebAPI'...
+No referenced design-time services were found.
+Finding design-time services for provider 'Microsoft.EntityFrameworkCore.SqlServer'...
+Using design-time services from provider 'Microsoft.EntityFrameworkCore.SqlServer'.
+Finding IDesignTimeServices implementations in assembly 'DotNet6WebAPI'...
+No design-time services were found.
+Writing migration to 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\Migrations\20221203120043_Initial Create.cs'.
+Writing model snapshot to 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\Migrations\APIDbContextModelSnapshot.cs'.
+To undo this action, use Remove-Migration.
+PM> Update-Database -verbose
+Using project 'DotNet6WebAPI'.
+Using startup project 'DotNet6WebAPI'.
+Build started...
+Build succeeded.
+C:\Program Files\dotnet\dotnet.exe exec --depsfile "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.deps.json" --additionalprobingpath C:\Users\ASUS\.nuget\packages --runtimeconfig "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.runtimeconfig.json" C:\Users\ASUS\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.0\tools\netcoreapp2.0\any\ef.dll database update --verbose --no-color --prefix-output --assembly "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.dll" --project "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\DotNet6WebAPI.csproj" --startup-assembly "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0\DotNet6WebAPI.dll" --startup-project "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\DotNet6WebAPI.csproj" --project-dir "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\\" --language C# --configuration Debug --working-dir "C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI" --root-namespace DotNet6WebAPI --nullable
+Using assembly 'DotNet6WebAPI'.
+Using startup assembly 'DotNet6WebAPI'.
+Using application base 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\bin\Debug\net6.0'.
+Using working directory 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI'.
+Using root namespace 'DotNet6WebAPI'.
+Using project directory 'C:\Users\ASUS\Desktop\Problem Solving\DotNet6WebAPI\'.
+Remaining arguments: .
+Finding DbContext classes...
+Finding IDesignTimeDbContextFactory implementations...
+Finding application service provider in assembly 'DotNet6WebAPI'...
+Finding Microsoft.Extensions.Hosting service provider...
+Using environment 'Development'.
+Using application service provider from Microsoft.Extensions.Hosting.
+Found DbContext 'APIDbContext'.
+Finding DbContext classes in the project...
+Using context 'APIDbContext'.
+Finding design-time services referenced by assembly 'DotNet6WebAPI'...
+Finding design-time services referenced by assembly 'DotNet6WebAPI'...
+No referenced design-time services were found.
+Finding design-time services for provider 'Microsoft.EntityFrameworkCore.SqlServer'...
+Using design-time services from provider 'Microsoft.EntityFrameworkCore.SqlServer'.
+Finding IDesignTimeServices implementations in assembly 'DotNet6WebAPI'...
+No design-time services were found.
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (566ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      CREATE DATABASE [DotNet6WebAPIDB];
+Executed DbCommand (566ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+CREATE DATABASE [DotNet6WebAPIDB];
+Executed DbCommand (157ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [DotNet6WebAPIDB] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (157ms) [Parameters=[], CommandType='Text', CommandTimeout='60']
+      IF SERVERPROPERTY('EngineEdition') <> 5
+      BEGIN
+          ALTER DATABASE [DotNet6WebAPIDB] SET READ_COMMITTED_SNAPSHOT ON;
+      END;
+Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (39ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [__EFMigrationsHistory] (
+          [MigrationId] nvarchar(150) NOT NULL,
+          [ProductVersion] nvarchar(32) NOT NULL,
+          CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+      );
+Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT 1
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT 1
+Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (59ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT [MigrationId], [ProductVersion]
+      FROM [__EFMigrationsHistory]
+      ORDER BY [MigrationId];
+Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20221203120043_Initial Create'.
+Applying migration '20221203120043_Initial Create'.
+Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE [Students] (
+    [StudentID] int NOT NULL IDENTITY,
+    [Name] nvarchar(250) NOT NULL,
+    [ContactNumber] int NOT NULL,
+    [Age] int NOT NULL,
+    CONSTRAINT [PK_Students] PRIMARY KEY ([StudentID])
+);
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE [Students] (
+          [StudentID] int NOT NULL IDENTITY,
+          [Name] nvarchar(250) NOT NULL,
+          [ContactNumber] int NOT NULL,
+          [Age] int NOT NULL,
+          CONSTRAINT [PK_Students] PRIMARY KEY ([StudentID])
+      );
+Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20221203120043_Initial Create', N'7.0.0');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (9ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+      VALUES (N'20221203120043_Initial Create', N'7.0.0');
+Done.
+PM> 
